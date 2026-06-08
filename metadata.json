@@ -1,0 +1,6 @@
+{
+  "name": "Do Fio ao Terço",
+  "description": "Área de estudos premium para montagem de terços artesanais com vídeos integrados e controle de progresso.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-marfim: #F8F4EF;
+  --color-rose: #F6DEDE;
+  --color-gold: #C9A86A;
+  --color-areia: #E7D8C8;
+  --color-text-dark: #58493E;
+  
+  --color-rose-light: #FDF9F9;
+  --color-rose-dark: #E2B2B2;
+  --color-gold-light: #DFCDAA;
+  --color-gold-dark: #A88648;
+  --color-areia-light: #F2EAE0;
+  --color-text-muted: #8E7A6C;
+  --color-success: #97AB8B;
+  --color-success-dark: #6C7F62;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F4EF;
+}
+::-webkit-scrollbar-thumb {
+  background: #E7D8C8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #DFCDAA;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  background-color: #F8F4EF;
+  color: #58493E;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Floating Glow Background */
+@keyframes float-glow {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(6%, 8%) scale(1.1);
+  }
+}
+
+.animate-glow-1 {
+  animation: float-glow 28s infinite alternate ease-in-out;
+}
+
+.animate-glow-2 {
+  animation: float-glow 22s infinite alternate ease-in-out -4s;
+}
+
+.animate-glow-3 {
+  animation: float-glow 32s infinite alternate ease-in-out -8s;
+}
+
+/* Glass-like effect */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(201, 168, 106, 0.15);
+  backdrop-filter: blur(8px);
+}
